@@ -37,6 +37,7 @@ class BottomNav extends StatelessWidget {
               Container(
                 child: IconButton(
                   icon: Icon(Icons.contact_page),
+                  tooltip: "Contact",
                   onPressed: () => {},
                 ),
               ),
