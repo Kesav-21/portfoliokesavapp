@@ -24,7 +24,7 @@ class HomePage extends StatelessWidget {
           margin: const EdgeInsets.symmetric(vertical: 10.0, horizontal: 30.0),
           child: const Text(
               "I'm Kesavaraman a passionate self-taught Full Stack web developer . I'm a graduand in Computer Science from Panimalar Engineering College. I'm a passionate learner who's always willing to learn and work across technologies and domains bringing you programming and design from the future."),
-        )
+        ),
       ],
     );
   }
