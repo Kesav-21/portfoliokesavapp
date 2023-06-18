@@ -11,7 +11,7 @@ class Skills extends StatelessWidget {
         Text("My Skills"),
         SizedBox(
           height: MediaQuery.of(context).size.height*0.7,
-          width: 400,
+          width: MediaQuery.of(context).size.width,
           child: SkillItem()
           )
         ],
