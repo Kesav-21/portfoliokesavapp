@@ -8,8 +8,10 @@ class Works extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: WorkCard(),
+    return SingleChildScrollView(
+      child: Column(
+      children: [const Text("My Works"), WorkCard()],
+    ),
     );
   }
 }
