@@ -111,6 +111,9 @@ class WorkCard extends StatelessWidget {
       child: Column(children: <Widget>[
       for (var work in myWorks)
         Card(
+          elevation: 3,
+          color: Colors.transparent,
+          surfaceTintColor: Colors.white,
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: <Widget>[
