@@ -37,7 +37,8 @@ class CertCard extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(edu.desc),
-                      Wrap(alignment: WrapAlignment.spaceBetween,
+                      Wrap(
+                      alignment: WrapAlignment.spaceBetween,
                       direction: Axis.horizontal,
                       children: [
                         Text("Skills learned:\t"),
