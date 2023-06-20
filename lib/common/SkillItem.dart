@@ -27,22 +27,22 @@ class SkillItem extends StatelessWidget {
       crossAxisCount: 3,
       crossAxisSpacing: 5,
       mainAxisSpacing: 10,
-      padding: EdgeInsets.all(10.0),
+      padding: EdgeInsets.symmetric(horizontal:20.0),
       children: [
-        for (var skill in mySkills)
-          Column(
-            children: [
-              CircularPercentIndicator(
-                radius: 35.0,
-                center: Image.asset(
-                      skill.image,
-                      scale: 25.0,
-                      ),footer: Text(skill.sname,style: TextStyle(color: Colors.blue),),
-                lineWidth: 5.0,
-                percent: skill.progress,
-              ),
-            ],
-          )
+        for (var skill in mySkills)...[
+          CircularPercentIndicator(
+            radius: 35.0,
+            center: Image.asset(
+              skill.image,
+              scale: 25.0,
+            ),
+            footer: Text(
+              skill.sname,
+              style: TextStyle(color: Colors.blue),
+            ),
+            lineWidth: 5.0,
+            percent: skill.progress,
+          ),],
       ],
     );
   }
@@ -66,27 +66,28 @@ class OtherSkillItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Wrap(
-      direction: Axis.horizontal,
-      alignment: WrapAlignment.spaceEvenly,
-      spacing: 5.0,
-      runSpacing: 5.0,
-      children: [
-        for (var oskill in myOtherSkills)
-          Column(
-                children: [
-                  Padding(
-                    padding: EdgeInsets.all(2.0),
-                    child: Image.asset(
-                oskill.image,
-                scale: 20.0,
-              ),
-              ),
-              Padding(padding: EdgeInsets.all(5.0),child: Text(oskill.sname),
-              ),
+        direction: Axis.horizontal,
+        alignment: WrapAlignment.spaceEvenly,
+        spacing: 5.0,
+        runSpacing: 5.0,
+        children: [
+          for (var oskill in myOtherSkills)
+            Column(
+              children: [
+                Padding(
+                  padding: EdgeInsets.all(2.0),
+                  child: Image.asset(
+                    oskill.image,
+                    scale: 20.0,
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.all(5.0),
+                  child: Text(oskill.sname),
+                ),
               ],
-              )
-      ]
-);
+            )
+        ]);
   }
 }
 
