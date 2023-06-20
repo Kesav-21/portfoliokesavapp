@@ -39,9 +39,19 @@ class _MyAppState extends State<MyApp> {
       appBar: AppBar(
           title: const Text("Kesav Portfolio"),
         ),
-      body:Center(
-        child:_widgetOptions.elementAt(_selectedIndex),
+
+      body:Container(
+        decoration: BoxDecoration(
+        image: DecorationImage(
+          colorFilter: new ColorFilter.mode(Colors.black.withOpacity(0.2), BlendMode.dstATop),
+          image: AssetImage('assets/images/bg.jpg'),
+          fit: BoxFit.cover
+        )
+      ),
+        child: Center(
+          child:_widgetOptions.elementAt(_selectedIndex),
         ),
+      ),
       bottomNavigationBar: BottomNavigationBar(
         items:  <BottomNavigationBarItem>[
         BottomNavigationBarItem(
