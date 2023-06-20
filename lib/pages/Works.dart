@@ -10,7 +10,15 @@ class Works extends StatelessWidget {
   Widget build(BuildContext context) {
     return SingleChildScrollView(
       child: Column(
-      children: [const Text("My Works"), WorkCard()],
+      children: [
+        Padding(
+          padding: EdgeInsets.all(10.0),
+          child: Text("My Works",
+          style: TextStyle(
+            fontSize: 20.0,
+            fontWeight: FontWeight.bold,
+            color: Colors.blue))),
+        WorkCard()],
     ),
     );
   }

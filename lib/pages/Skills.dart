@@ -10,7 +10,6 @@ class Skills extends StatelessWidget {
       child: Column(
       children: [
         Padding(padding: EdgeInsets.all(10.0),child: Text("My Skills",style: TextStyle(fontSize: 20.0,fontWeight: FontWeight.bold,color: Colors.green)),),
-        
         SizedBox(
           height: MediaQuery.of(context).size.height*0.5,
           width: MediaQuery.of(context).size.width,
@@ -21,7 +20,6 @@ class Skills extends StatelessWidget {
           width: MediaQuery.of(context).size.width*0.9,
           child: OtherSkillItem()
           ),
-          
         ],
     ),
     );

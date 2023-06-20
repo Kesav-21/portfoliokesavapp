@@ -113,7 +113,6 @@ class WorkCard extends StatelessWidget {
         Card(
           elevation: 3,
           color: Colors.transparent,
-          surfaceTintColor: Colors.white,
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: <Widget>[

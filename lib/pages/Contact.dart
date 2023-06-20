@@ -8,7 +8,13 @@ class Contact extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Text("My Profiles and Contact"),
+        Padding(
+          padding: EdgeInsets.all(10.0),
+          child: Text("My Profile and Contact",
+          style: TextStyle(
+            fontSize: 20.0,
+            fontWeight: FontWeight.bold,
+            color: Colors.teal))),
         SizedBox(
           height: MediaQuery.of(context).size.height*0.7,
           width: MediaQuery.of(context).size.width,

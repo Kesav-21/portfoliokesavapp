@@ -6,8 +6,8 @@ class Education extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  Container(
-      child: CertCard(),
+    return  SingleChildScrollView(
+      child: CertCard()
     );
   }
 }
