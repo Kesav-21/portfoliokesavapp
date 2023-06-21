@@ -38,10 +38,21 @@ dependencies:
   go_router: ^8.0.4
   url_launcher: ^6.1.11
   percent_indicator: ^4.2.3
+  
+  
+
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  flutter_launcher_icons: ^0.13.1
+
+flutter_icons:
+  android: "launcher_icon"
+  image_path: "assets/images/ic_launcher.png"
+
+  
+  
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
